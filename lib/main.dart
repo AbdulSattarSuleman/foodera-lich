@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fooder_lich/home.dart';
 import 'fooderlich_theme.dart';
 
 void main() {
@@ -14,31 +15,14 @@ class Fooderlich extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO create theme
-    final theme = FooderlichTheme.light();
+    final theme = FooderlichTheme.dark();
     // TODO Apply Home Widget
     // 3
     return MaterialApp(
-      // TODO: Add theme
-      theme: theme,
-      title: 'Fooder lich',
-      // 4
-      home: Scaffold(
-        // TODO: style the title
-
-        appBar: AppBar(
-          title: Text(
-            "Fooder lich App",
-            style: theme.textTheme.headline6,
-          ),
-        ),
-        // TODO: style the body text
-        body: Center(
-          child: Text(
-            'Let\'s get Cooking 👩‍🍳',
-            style: theme.textTheme.headline1,
-          ),
-        ),
-      ),
-    );
+        // TODO: Add theme
+        theme: theme,
+        title: 'Fooder lich',
+        // 4
+        home: const Home());
   }
 }
