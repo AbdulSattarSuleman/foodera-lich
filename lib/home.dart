@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:fooder_lich/card1.dart';
+import 'package:fooder_lich/card2.dart';
+import 'package:fooder_lich/card3.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -18,14 +20,14 @@ class _HomeState extends State<Home> {
     // Container(
     //   color: Colors.red,
     // ),
-    //Card2();
-    Container(
-      color: Colors.green,
-    ),
-    //Card3();
-    Container(
-      color: Colors.blue,
-    ),
+    Card2(),
+    // Container(
+    //   color: Colors.green,
+    // ),
+    Card3(),
+    // Container(
+    //   color: Colors.blue,
+    // ),
   ];
 
   void _onItemTapped(int index) {
